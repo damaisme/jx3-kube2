@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "pod01-lb"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
