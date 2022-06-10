@@ -33,16 +33,20 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: radendi
+    repository: jx3-kube2
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: pod01-lb
     kind: ingress
     namespaceSubDomain: -kuberhealthy.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: radendi
   repository: bucketrepo
   secretStorage: local
   vault: {}
